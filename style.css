@@ -671,10 +671,10 @@ footer {
 .service-card p { color: #666; }
 .featured p { color: #e2e2e2; }
 .about { background: #f4f4f4; }
-.fleet-gallery { position: relative; display: grid; grid-template-columns: 1.25fr .75fr; grid-template-rows: 1fr 1fr; gap: .75rem; max-width: 540px; margin: auto; }
+.fleet-gallery { position: relative; display: grid; grid-template-columns: 1.25fr .75fr; grid-template-rows: repeat(3, 1fr); gap: .75rem; max-width: 540px; margin: auto; }
 .fleet-photo { width: 100%; height: 100%; object-fit: cover; filter: grayscale(.12) contrast(1.05); }
-.fleet-photo-main { grid-row: 1 / 3; aspect-ratio: .72; }
-.fleet-photo-top, .fleet-photo-bottom { aspect-ratio: 1.1; }
+.fleet-photo-main { grid-row: 1 / 4; aspect-ratio: .72; }
+.fleet-photo-top, .fleet-photo-middle, .fleet-photo-bottom { aspect-ratio: 1.1; }
 .gallery-label { position: absolute; z-index: 2; left: -1.1rem; bottom: 1.6rem; display: flex; flex-direction: column; padding: 1.1rem 1.35rem; background: var(--warm); color: #fff; text-transform: uppercase; }
 .gallery-label strong { font-family: "Barlow Condensed"; font-size: 2rem; line-height: .9; }
 .gallery-label span { font-size: .6rem; letter-spacing: .09em; font-weight: 700; }
