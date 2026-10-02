@@ -667,6 +667,15 @@ footer {
 .toyota-badge img { width: 61px; max-height: 24px; object-fit: contain; filter: brightness(0) invert(1); }
 .service-card { border-bottom-color: #ddd; }
 .service-card:hover { box-shadow: 0 18px 35px rgba(0, 0, 0, .12); }
+.wash-showcase { background: #f4f4f4; }
+.wash-comparisons { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.wash-comparison { display: grid; grid-template-columns: 1fr 44px 1fr; align-items: center; gap: .65rem; padding: .75rem; background: #fff; box-shadow: 0 12px 32px rgba(0, 0, 0, .07); }
+.wash-image { position: relative; aspect-ratio: 1.08; overflow: hidden; background: #ddd; }
+.wash-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.wash-comparison:hover .wash-image img { transform: scale(1.04); }
+.wash-image span { position: absolute; left: 0; bottom: 0; padding: .45rem .7rem; color: #fff; background: #111; font-size: .62rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.wash-image.after span { background: var(--warm); }
+.wash-arrow { display: grid; place-items: center; width: 36px; height: 36px; color: #fff; background: #111; font-size: 1rem; }
 .icon-wrap { color: #fff; background: #1b1b1b; }
 .service-card p { color: #666; }
 .featured p { color: #e2e2e2; }
@@ -697,3 +706,8 @@ footer {
 .contact-card small { color: #777; }
 footer { color: #ccc; }
 @media (max-width: 767.98px) { .fleet-gallery { max-width: 420px; } .toyota-brand { border-bottom: 0; } }
+@media (max-width: 767.98px) {
+  .wash-comparisons { grid-template-columns: 1fr; gap: 1rem; }
+  .wash-comparison { grid-template-columns: 1fr 38px 1fr; padding: .65rem; }
+  .wash-image { aspect-ratio: .95; }
+}
