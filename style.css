@@ -64,6 +64,16 @@ a {
   color: var(--warm);
   font-weight: 700;
 }
+.brand-forklift {
+  width: 40px;
+  margin-left: 0.1rem;
+  object-fit: contain;
+}
+.header-flag {
+  width: 36px;
+  object-fit: cover;
+  border-radius: 2px;
+}
 .brand-mark {
   display: grid;
   place-items: center;
@@ -585,6 +595,9 @@ footer {
   }
   .btn-nav {
     display: inline-block;
+    margin-top: 0.7rem;
+  }
+  .header-flag {
     margin-top: 0.7rem;
   }
   .min-vh-hero {
