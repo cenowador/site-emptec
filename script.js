@@ -1,15 +1,1 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-
-const nav = document.getElementById("mainNav");
-window.addEventListener("scroll", () =>
-  nav.classList.toggle("scrolled", window.scrollY > 12),
-);
-
-document.querySelectorAll(".navbar-collapse .nav-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    const collapse = bootstrap.Collapse.getInstance(
-      document.getElementById("navbarContent"),
-    );
-    if (collapse) collapse.hide();
-  });
-});
+document.getElementById("year").textContent=(new Date).getFullYear();const nav=document.getElementById("mainNav");window.addEventListener("scroll",()=>nav.classList.toggle("scrolled",window.scrollY>12)),document.querySelectorAll(".navbar-collapse .nav-link").forEach(e=>{e.addEventListener("click",()=>{const e=bootstrap.Collapse.getInstance(document.getElementById("navbarContent"));e&&e.hide()})});
