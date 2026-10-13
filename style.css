@@ -18,6 +18,7 @@ body {
   color: var(--ink);
   background: var(--cream);
   font-family: Inter, Arial, sans-serif;
+  font-display: swap;
 }
 a {
   text-decoration: none;
@@ -53,6 +54,7 @@ a {
   gap: 0.55rem;
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
+  font-display: swap;
   font-size: 1.45rem;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -169,6 +171,7 @@ h1,
 h2,
 h3 {
   font-family: "Barlow Condensed", Arial, sans-serif;
+  font-display: swap;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -335,6 +338,7 @@ h2 em {
 }
 .experience-card strong {
   font-family: "Barlow Condensed";
+  font-display: swap;
   font-size: 2rem;
   line-height: 0.9;
 }
@@ -840,6 +844,7 @@ footer {
 }
 .gallery-label strong {
   font-family: "Barlow Condensed";
+  font-display: swap;
   font-size: 2rem;
   line-height: 0.9;
 }
